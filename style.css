@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #cb021c;
+    margin: 0;
+
+}
+a{
+    color: white;
+}
+.hamburger {
+    position:fixed ;
+    top: 32px;
+    left: 32px;
+    font-size: 48px;
+}
+
+.phone {
+    position: fixed;
+    top: 32px;
+    right: 32px;
+    font-size: 48px;
+}
+
+.logo {
+    color: white;
+    font-size: 27px;
+    margin: 32px 0;
+    text-align: center;
+}
+
+.logo h2{
+    margin: 0;
+}
+
+.logo p{
+    color: black;
+    margin: 0;
+}
+.logo i {
+    font-size: 58px;
+}
+
+.carousel-container {
+    overflow:hidden;
+    height: 60vh;
+    width: 100vw;
+    margin-top: 10rem;
+    position: relative;
+}
+
+.carousel{
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide{
+    width: 100vw;
+    text-align: center;
+}
+
+.slide img{
+    object-fit: cover;
+    height: 400px;
+    width: 400px;
+}
+     
+    .arrow{
+        background-color: transparent;
+        border: none; 
+        cursor: pointer;
+        position: absolute;
+        font-size: 4rem;
+        opacity: 0.5;
+        top: 30%;
+        transform: translateY(-50%);
+    }
+
+    .left-arrow{
+        left: 2rem;
+    }
+
+    .right-arrow{
+        right: 2rem;
+    }
